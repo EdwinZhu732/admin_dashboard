@@ -122,7 +122,7 @@ body{
     position: relative;
 }
 
-.top{
+.header > .top{
     display: flex;
     justify-content: space-between;
     padding: 16px 32px 0px 32px;
@@ -134,11 +134,17 @@ body{
     gap: 12px;
 }
 
+.magnify{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
 .search-bar{
     background-color: rgb(224, 223, 223);
     border-radius: 20px;
     border: none;
-    width: 24vw;
+    width: 30vw;
     height: 24px;
     padding-left: 8px;
 }
@@ -147,30 +153,79 @@ body{
     display: flex;
     align-items: center;
     gap: 32px;
-}
-
-.notif > div{
-    font-size: 24px;
-}
-.magnify{
-    width: 24px;
-    height: 24px;
+    padding-right: 64px;
 }
 
 .bell-top{
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
 }
 
 .avatar-top{
     width: 36px;
     height: 36px;
-    border-radius: 16px;
+    border-radius: 24px;
+    border: 1px solid gray;
 }
 
+.notif > div{
+    font-size: 24px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 32px 16px 32px;
+}
+
+.bottom > .left{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bottom > .left > div > .name{
+    font-size:24px;
+    margin-top: 8px;
+}
+
+.avatar-bottom{
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+}
+
+.bottom > .right{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-right: 48px;
+}
+
+.bottom > .right > button{
+    background-color: rgb(38, 197, 105);
+    color: white;
+    border-radius: 24px;
+    padding: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border: none;
+}
+
+.bottom > .right > button:hover{
+    cursor: pointer;
+    transform:scale(1.1, 1.1);
+}
 .main{
     background-color: rgb(219, 216, 216);
     grid-column: 2;
     grid-row: 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
+.main > .characters{
+    grid-row: 2;
+    grid-column: 2;
+}
