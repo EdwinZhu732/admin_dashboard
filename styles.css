@@ -227,11 +227,17 @@ body{
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 30px 30px 30px 30px;
+    max-height: 100%;
 }
 
 .main > .chars{
     grid-row: 2;
     grid-column: 2;
+}
+
+.main > .chars > div:first-child{
+    font-size: 24px;
+    margin-bottom: 4px;
 }
 
 .main > .chars > .chars-grid{
@@ -247,6 +253,26 @@ body{
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+.main > .chars > .chars-grid > div > div > div:last-child {
+    color: gray;
+}
+
+.main > .announcements > div:first-child{
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.main > .announcements > .announcements-grid{
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px 16px 16px 16px;
+}
+
+.main > .announcements > .announcements-grid > p{
+    font-size: 12px;
+    color: rgb(99, 97, 97);
 }
 .chars-img{
     width: 36px;
