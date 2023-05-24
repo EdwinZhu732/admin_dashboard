@@ -122,6 +122,52 @@ body{
     position: relative;
 }
 
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px 0px 32px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-bar{
+    background-color: rgb(224, 223, 223);
+    border-radius: 20px;
+    border: none;
+    width: 24vw;
+    height: 24px;
+    padding-left: 8px;
+}
+
+.notif{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.notif > div{
+    font-size: 24px;
+}
+.magnify{
+    width: 24px;
+    height: 24px;
+}
+
+.bell-top{
+    width: 32px;
+    height: 32px;
+}
+
+.avatar-top{
+    width: 36px;
+    height: 36px;
+    border-radius: 16px;
+}
+
 .main{
     background-color: rgb(219, 216, 216);
     grid-column: 2;
